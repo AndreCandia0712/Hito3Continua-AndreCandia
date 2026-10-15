@@ -1,0 +1,10 @@
+# Quarkus / Java
+backend/target/
+backend/.quarkus/
+*.class
+
+# PHP
+frontend/vendor/
+
+# Configuraciones sensibles
+.env
