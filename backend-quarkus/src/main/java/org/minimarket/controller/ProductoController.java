@@ -18,6 +18,13 @@ public class ProductoController {
         return Producto.findActivos();
     }
 
+    // ✅ MÉTODO QUE FALTABA: Obtener un producto por ID
+    @GET
+    @Path("/{id}")
+    public Producto obtenerPorId(@PathParam("id") Integer id) {
+        return Producto.findById(id);
+    }
+
     @POST
     @Transactional
     public Response crear(@Valid Producto producto) {

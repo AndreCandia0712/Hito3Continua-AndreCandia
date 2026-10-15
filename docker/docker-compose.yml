@@ -10,7 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: root123
       MYSQL_DATABASE: db_minimarket_pro413
       MYSQL_USER: usuario_minimarket
-      MYSQL_PASSWORD: patito123
+      MYSQL_PASSWORD: pass123
     volumes:
       - mysql_data:/var/lib/mysql
       - ../sql/init.sql:/docker-entrypoint-initdb.d/init.sql
