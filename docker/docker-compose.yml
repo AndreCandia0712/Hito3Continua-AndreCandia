@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: minimarket_mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: db_minimarket_pro413
+      MYSQL_USER: usuario_minimarket
+      MYSQL_PASSWORD: pass123
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ../sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - red_minimarket
+    restart: always
+
+volumes:
+  mysql_data:
+
+networks:
+  red_minimarket:
+    driver: bridge
