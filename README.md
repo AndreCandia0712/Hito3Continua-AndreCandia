@@ -45,7 +45,7 @@ Antes de empezar, instala los siguientes programas en tu equipo (se recomienda a
 
 2. Entra a la carpeta principal del proyecto:
    (En mi caso)
-   cd C:\Users\Andre\OneDrive\Desktop\Proyectos\continua-rest-h3-andrecandia
+   cd C:\Users\Andre\OneDrive\Desktop\Proyectos\continua-rest-h3-andrecandia\backend-quarkus
 
 3. Ejecuta el servidor Quarkus:
    ./mvnw quarkus:dev
